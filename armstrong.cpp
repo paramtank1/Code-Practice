@@ -12,7 +12,7 @@ int length(int n){
     return count;
 }
 
-int main(){
+int main(){ 
     int n;
     cout<<"Enter a number: ";
     cin>>n;

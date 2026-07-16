@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 
 
-    //f(a) Leap Year
+    //G(a) Leap Year
     int year;
     cout<<"enter the year:";
     cin>>year;
@@ -15,7 +15,7 @@ int main(){
         cout << year << " is not a leap year";
     }
 
-    //f(b) From ASCII value is it capital, small letter or special Symbol
+    //G(b) From ASCII value 
     char c;
     cout << "Enter any character: ";
     cin >> c;
@@ -30,7 +30,7 @@ int main(){
         cout << "Entered keyword is special char.";
     }
 
-    //f(c) Grade of steel
+    //G(c) Grade of steel
     float h, c, t;
     cout << "Enter the values for Hardness, Carbon content, Tensile strength";
     cin >> h >> c >>t;
@@ -48,7 +48,7 @@ int main(){
         cout << "Grade is 5";
     }
 
-    //f(d) Library fine
+    //G(d) Library fine
     int days;
     float fine;
     cout << "Enter a number of days the person is late: ";
@@ -66,7 +66,7 @@ int main(){
         cout << "Your Membership is cancelled";
     }
 
-    //f(e) Triangle is valid or not
+    //G(e) Triangle is valid or not
     int a,b,c;
     cout << "Enter length of sides: ";
     cin >> a >> b >> c;
@@ -76,7 +76,7 @@ int main(){
         cout << "Triangle not valid";
     }
 
-    //f(f) which triangle is it?
+    //G(f) which triangle is it?
     int side1, side2, side3, angle1, angle2, angle3;
     cout << "Enter the lengths of the three sides of the triangle: ";
     cin >> side1 >> side2 >> side3;
@@ -94,7 +94,7 @@ int main(){
     }
 
 
-    //f(g) work efficiency
+    //G(g) work efficiency
     int hours;
     cout << "Enter the number of hours taken by worker to complete the job: ";
     cin >> hours; 
@@ -109,5 +109,56 @@ int main(){
     } else {
         cout << "Invalid input. Please enter a positive number of hours." << endl;
     }
+    
+    //G(h) Stock and Credit
+    int s, q;
+    bool c;
+    cin >> s >> q >> c;
+    if(s>=q && c==true){
+        cout << "Order is placed";
+    }else if(c==false){
+        cout << "You are out of credits";
+    }else if(c==true && s<q){
+        int remaining = q - s;
+        cout << "We are sending you " << s << " items and remaining " << remaining << " items will be sent later";
+    }
+
+    //J(1)
+    int x, min, max;
+    cin >> max >> x;
+
+    (x > max) ? (max = x) : (min = x);
+
+    //J(2)
+    int code;
+    cin >> code;
+
+    (code > 1) ? cout << "\nJerusalem" : (code < 1) ? cout << "\nEddie" : cout << "\nC Brain";
+
+
+    //J(3)
+    float sal;
+    cout << "Enter the salary: ";
+    cin >> sal;
+   
+    (sal < 40000 && sal > 25000) ? cout << "Manager" : 
+    (sal < 25000 && sal > 15000) ? cout << "Accountant" : cout << "Clerk";
+
+
+
+    int s, q;
+    bool c;
+    cin >> s >> q >> c;
+    if(s>=q && c==true){
+        cout << "Order is placed";
+    }else if(c==false){
+        cout << "You are out of credits";
+    }else if(c==true && s<q){
+        int remaining = q - s;
+        cout << "We are sending you " << s << " items and remaining " << remaining << " items will be sent later";
+    }
+
+    
 
 }
+
