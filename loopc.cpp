@@ -17,7 +17,7 @@ int main() {
                  << " hours of overtime and overtime pay is: " << op << endl;
         } else {
             cout << "Emp:" << i << " work " << hrs 
-                 << " hours. No overtime pay."; << endl;
+                 << " hours. No overtime pay." << endl;
         }
 
         i++; 
@@ -37,7 +37,7 @@ int main() {
     }
     
     else{
-        cout << "There is not factorial for numbers less than 1";
+        cout << "There is not factorial for numbers less than 1" << endl;
     }
 
     
@@ -49,13 +49,13 @@ int main() {
     int i = 1;
     if(power>0){
         while (i <= power) {
-        result = result * base;
-        i++;
+            result = result * base;
+            i++;
         }
     }else if(power==0){
         result = 1;
     }else{
-        cout << "Power is negative";
+        cout << "Power is negative" << endl;
     }
 
     cout << base << " to the power of " << power << " is: " << result << endl;
@@ -68,10 +68,29 @@ int main() {
         i++; 
     }
 
+    //B(g) find total number the pos, neg and zero from the user input
+    bool i;
+    bool yn;
+    int pos=0; int neg=0; int zero=0;
     
+        while(i=true){
+            int num;
+            cout << "Enter a number: ";
+            cin >> num;
+            if(num>0){
+                pos++;
+            }else if(num<0){
+                neg++;
+            }else{ 
+                zero++;
+            }
+            cin >> yn;
+            if(yn==0){
+                break;
+            }
 
-
-
+    }
+    cout << "Pos:" << pos << "\nNeg:" << neg << "\nZero: " << zero;
 
 
 
